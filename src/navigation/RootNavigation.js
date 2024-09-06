@@ -3,6 +3,6 @@ import { AppNavigation } from "./AppNavigation"
 
 
 export function RootNavigation() {
-    const user = true
+    const user = null;
     return user ? <AppNavigation /> : <AuthScreen />
 }
