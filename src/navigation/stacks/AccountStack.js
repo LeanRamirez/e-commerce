@@ -41,6 +41,7 @@ export function AccountStack() {
             <Stack.Screen
                 name={screenName.account.changePassword}
                 component={ChangePasswordScreen}
+                options={{ title: "Cambiar contraseña" }}
             />
             <Stack.Screen
                 name={screenName.account.addresses}

@@ -1,10 +1,12 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { Layout } from "../../layouts"
+import { UserInfo, Menu } from "../../components/account"
 
 export function AccountScreen() {
     return (
-        <View>
-            <Text>AccountScreen</Text>
-        </View>
+        <Layout.Basic  >
+            <UserInfo />
+            <Menu />
+        </Layout.Basic>
     )
 }

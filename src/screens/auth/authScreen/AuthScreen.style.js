@@ -10,6 +10,6 @@ export const style = StyleSheet.create({
         width: "100%",
         height: 300,
         resizeMode: "contain",
-        marginBottom: -15
+        marginBottom: -30
     }
 });

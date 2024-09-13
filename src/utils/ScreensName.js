@@ -34,5 +34,4 @@ export const screenName = {
     wishList,
     cart,
     account
-
 }

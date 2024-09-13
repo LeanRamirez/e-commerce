@@ -1,10 +1,10 @@
 import React from 'react'
 import { View, Text } from 'react-native'
 
-export function ChangeNameScreen() {
+export function SearchInput() {
     return (
         <View>
-            <Text>ChangeNameScreen</Text>
+            <Text>SearchInput</Text>
         </View>
     )
 }
