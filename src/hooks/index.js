@@ -1,4 +1,2 @@
-import { useContext } from "react"
-import { AuthContext } from "../contexts"
-
-export const useAuth = () => useContext(AuthContext)
+export * from "./useAuth"
+export * from "./useSearch"
