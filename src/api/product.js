@@ -46,11 +46,27 @@ async function searchProduct(text) {
 
         // Convertir la respuesta a JSON
         const data = await response.json();
-        console.log('Data:', data); // Verificar los datos obtenidos
+
         return data;
     } catch (error) {
         console.error("Error al buscar productos:", error);
         throw error;
+    }
+}
+
+
+async function getProductById(id) {
+    try {
+        const populateFilter = "populate=*"
+        const url = `${ENV.API_URL}/${ENV.ENDPOINTS.PRODUCTS}/${id}?${populateFilter}`;
+
+        const response = await fetch(url);
+
+        if (response.status !== 200) throw response;
+
+        return await response.json()
+    } catch (error) {
+        throw error
     }
 }
 
@@ -60,4 +76,5 @@ async function searchProduct(text) {
 export const productCtrl = {
     getLastestPublished,
     search: searchProduct,
+    getById: getProductById,
 };
