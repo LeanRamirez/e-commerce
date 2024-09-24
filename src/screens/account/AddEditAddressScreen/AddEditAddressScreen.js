@@ -18,7 +18,7 @@ export function AddEditAddressScreen(props) {
     } } = props;
     const { user } = useAuth();
     const addressId = params?.addressId
-    console.log(addressId);
+
 
 
     const navigation = useNavigation();

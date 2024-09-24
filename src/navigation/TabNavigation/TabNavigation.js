@@ -2,6 +2,7 @@ import { View } from "react-native"
 import { Badge } from "react-native-paper"
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
 import AwesomeIcon from "react-native-vector-icons/FontAwesome"
+import { useCart } from "../../hooks"
 import { style } from "./TabNavigation.styles"
 import { AuthScreen } from "../../screens/auth"
 import { screenName } from "../../utils"
@@ -44,7 +45,8 @@ export function TabNavigation() {
 
 
 function setIcon(route, routeStatus) {
-    const totalProduct = 1;
+    const { totalProduct } = useCart()
+
     let iconName = "";
     let color = "#fff";
 
